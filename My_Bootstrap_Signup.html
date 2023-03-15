@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Bootstrap Signup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+      .jumbotron{
+        background-color:#C8C0B4;
+      }
+      a:link, a:visited{
+        color: #9F6228;
+      }
+      a:hover{
+        color: #C18E55;
+        text-decoration:none;
+      }
+      a:active{
+        color:#2F0D01;
+      }
+      nav.navbar{
+        background-color: #CEA162;
+      }
+      a.navbar-brand, a.nav-link{
+        color:#000;
+      }
+      a.navbar-brand:hover, a.nav-link:hover{
+        color:#D9D5DE;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light  rounded">
+      <a class="navbar-brand" href="#">Welcome</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="My_Bootstrap_Main.html">Landing Page</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-4 mx-auto">
+      <div class="jumbotron">
+        <h1 class="display-4">Log In</h1>
+        <p class="lead">Enter your email and password below to log in to Coffee Lover</p>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="coffeeEmail">Email address</label>
+          <input type="email" class="form-control" id="coffeeEmail" placeholder="Enter email for coffee!">
+        </div>
+        <div class="form-group">
+          <label for="coffeeUserPassword">Account password</label>
+          <input type="password" class="form-control" id="coffeeUserPassword" placeholder="Account password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="stayLogged">
+          <label class="form-check-label" for="stayLogged">Keep me logged in</label>
+        </div>
+        <button type="submit" class="btn btn-light mt-2 mb-5">Submit data</button>
+    </div>
+  </body>
+</html>
